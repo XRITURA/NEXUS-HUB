@@ -1,5 +1,7 @@
+-- Correct Rayfield load
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
+-- Proper window creation
 local Window = Rayfield:CreateWindow({
     Name = "NEXUS HUB",
     LoadingTitle = "NEXUS HUB",
@@ -13,15 +15,18 @@ local Window = Rayfield:CreateWindow({
     },
     Discord = {
         Enabled = true,
-        Invite = "pWQTq7AG",
+        Invite = "pwQTqr7AG",  -- Verify this invite code!
         RememberJoins = false
     }
 })
 
--- Initialize variables
+-- Initialize variables CORRECTLY
 local World1, World2, World3 = false, false, false
-_G.AutoFarm = false
+_G.AutoFarm = false  -- For farming functions later
 
+-- Add your tabs/buttons here
+local MainTab = Window:CreateTab("Main", 4483362458)
+MainTab:CreateLabel("Script loaded successfully!")
 -- Rest of your script...
 local MainTab = Window:CreateTab("Main", 4483362458)
 local SettingsTab = Window:CreateTab("Settings", 4483362458)
