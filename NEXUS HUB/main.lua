@@ -4,12 +4,12 @@ local Window = Rayfield:CreateWindow({
     Name = "NEXUS HUB",
     LoadingTitle = "NEXUS HUB",
     LoadingSubtitle = "by xritura",
-    Theme = "AmberGlow",    Check https://docs.sirius.menu/rayfield/configuration/themes
-
+    Theme = "AmberGlow",
+    
     ConfigurationSaving = {
         Enabled = false,
-        FolderName = "RelzHub",
-        FileName = "LevelSystem"
+        FolderName = "NEXUS_HUB",
+        FileName = "Config"
     },
     Discord = {
         Enabled = true,
@@ -18,6 +18,11 @@ local Window = Rayfield:CreateWindow({
     }
 })
 
+-- Initialize variables
+local World1, World2, World3 = false, false, false
+_G.AutoFarm = false
+
+-- Rest of your script...
 local MainTab = Window:CreateTab("Main", 4483362458)
 local SettingsTab = Window:CreateTab("Settings", 4483362458)
 
